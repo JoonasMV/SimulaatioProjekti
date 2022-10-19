@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane prefHeight="325.0" prefWidth="325.0" styleClass="background" stylesheets="@../../DarkTheme.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.ikkunat.asetukset.AsetusController">
+   <children>
+      <GridPane layoutX="14.0" layoutY="29.0" prefHeight="118.0" prefWidth="305.0" styleClass="background" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="40.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label styleClass="label-bright" text="Jonottajia" />
+            <TextField fx:id="jonottajaField" text="100" GridPane.columnIndex="1" />
+            <Label styleClass="label-bright" text="Ruuhka" GridPane.rowIndex="1" />
+            <RadioButton fx:id="ruuhkaButton" mnemonicParsing="false" onAction="#handleRuuhka" prefHeight="30.0" prefWidth="165.0" styleClass="button" text="Pois" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label styleClass="label-bright" text="Valmis simulaatio" GridPane.rowIndex="2" />
+            <ComboBox fx:id="simulaatioBox" onAction="#getSimuChoice" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+         </children>
+      </GridPane>
+      <Label layoutX="5.0" layoutY="4.0" styleClass="label-bright" text="Lisäasetukset" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0" />
+      <ButtonBar layoutX="115.0" layoutY="271.0" prefHeight="40.0" prefWidth="200.0" AnchorPane.bottomAnchor="5.0" AnchorPane.rightAnchor="5.0">
+        <buttons>
+          <Button mnemonicParsing="false" onAction="#handleCancel" styleClass="button-smaller" text="Cancel" />
+            <Button mnemonicParsing="false" onAction="#handleOK" text="OK" />
+        </buttons>
+      </ButtonBar>
+   </children>
+</AnchorPane>
