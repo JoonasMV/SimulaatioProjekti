@@ -86,7 +86,7 @@ public class AsetusController {
 	}
 	
 	private void initSimuBox() {
-		simulaatioBox.setItems(FXCollections.observableArrayList("Nopea", "Hidas", "Kallen keittiö"));
+		simulaatioBox.setItems(FXCollections.observableArrayList("Nopea", "Hidas", "Turbo"));
 	}
 	
 }

@@ -14,9 +14,9 @@
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="@../../DarkTheme.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.ikkunat.ajoData.DatalayoutKontrolleri">
    <children>
-      <SplitPane dividerPositions="0.29797979797979796" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <SplitPane dividerPositions="0.4066666666666667" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <items>
-          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" styleClass="background">
+          <AnchorPane maxWidth="240.0" minWidth="240.0" styleClass="background">
                <children>
                   <VBox maxHeight="1.7976931348623157E308" prefHeight="400.0" prefWidth="175.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                   
@@ -73,8 +73,7 @@
                         </GridPane>
                         <AnchorPane>
                            <children>
-                              <Button alignment="CENTER" maxHeight="30.0" maxWidth="1.7976931348623157E308" minHeight="30.0" mnemonicParsing="false" onAction="#handleNaytaGraph" text="Näytä graafi" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" />
-                              <Button alignment="CENTER" layoutY="40.0" maxHeight="30.0" maxWidth="1.7976931348623157E308" minHeight="30.0" mnemonicParsing="false" onAction="#handleNaytaPp" text="Näytä palvelupisteiden tiedot" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" />
+                              <Button alignment="CENTER" layoutX="50.0" layoutY="-1.0" maxHeight="30.0" maxWidth="1.7976931348623157E308" minHeight="30.0" mnemonicParsing="false" onAction="#handleNaytaPp" text="Näytä palvelupisteiden tiedot" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" />
                            </children>
                         </AnchorPane>
                      </children>

@@ -80,7 +80,7 @@
                   <HBox alignment="CENTER" prefHeight="29.0" prefWidth="220.0" spacing="10.0">
                      <children>
                         <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="label" text="Viive" />
-                        <Text fx:id="nopeusInfo" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="label" text="0 ms" />
+                        <Text fx:id="nopeusInfo" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="label" text="10 ms" />
                      </children>
                   </HBox>
                     <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleSimuloiButton" prefHeight="41.0" prefWidth="220.0" styleClass="button-bigger" text="Simuloi" />

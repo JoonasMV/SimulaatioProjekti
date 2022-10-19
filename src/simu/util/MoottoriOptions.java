@@ -96,7 +96,7 @@ public class MoottoriOptions {
 			break;
 			
 		
-		case "kallen keittiö":
+		case "turbo":
 			saapumisJakauma = 0.5;
 	  	  	linjastoJakauma = new double[] {1, 0.25};
 	  	  	kassaJakauma = new double[] {2, 0.5};
