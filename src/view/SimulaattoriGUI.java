@@ -169,16 +169,18 @@ public class SimulaattoriGUI implements ISimulaattoriUI {
 	@Override	
 	public int getIpKassat() throws NumberFormatException { return Integer.parseInt(this.ipField.getText()); }
 	
-	/***
+	/**
 	 * Palauttaa palvelupisteiden yhteismäärän
+	 * 
 	 * @return palvelupisteiden yhteismäärä
 	 */
 	private int ppYht()  {
 		return getLinjastot() + getKassat() + getIpKassat() + 2;
 	}
 
-	/***
+	/**
 	 * Vie GUI:lle reaalidataa simuloinnin moottorista
+	 * 
 	 * @param aika Simuloinnissa kulunut aika
 	 * @param asikkaat Asiaakkaat systeemissä
 	 * @param poydissa Poydissä olevat asiakkaat
@@ -204,7 +206,7 @@ public class SimulaattoriGUI implements ISimulaattoriUI {
 		numAlert.showAndWait();
 	}
 	
-	/***
+	/**
 	 * Palauttaa kaikki visualisoijat sisältävän masterVisu:n
 	 * @return kaikki visualisoijat sisältävä masterVisu taulukko
 	 */
@@ -213,8 +215,8 @@ public class SimulaattoriGUI implements ISimulaattoriUI {
 		return masterVisu;
 	}
 
-	/***
-	 * palauttaa tallennetut jakaumat
+	/**
+	 * Palauttaa tallennetut jakaumat
 	 * 
 	 * @return moottoriSettings moottorin asetukset sisältävä olio
 	 */
@@ -223,7 +225,7 @@ public class SimulaattoriGUI implements ISimulaattoriUI {
 		return moottoriSettings;
 	}
 	
-	/***
+	/**
 	 * Kerää asetukset masterVisun kokoamista varten
 	 */
 	public void getSettings() {

@@ -289,6 +289,13 @@ public class TestiMoottori extends Moottori {
 		Trace.out(Trace.Level.INFO, tapahtumalista.toString());
 	}
 
+	/**
+	 * Tekee simulaatioon ruuhkan
+	 * <p>
+	 * Muuttaa Saapumisjakauman odotusarvon todella pieneksi, jos ruuhka on laitettu päälle ja 
+	 * kello näyttää tiettyä aikaa. Lopettaa ruuhkan määrättynä aikana
+	 * <p>
+	 */
 	private void ruuhka() {
 		if(!ruuhka && kello.getAika() > ruuhkanAloitus) {
 			saapumisprosessi.setJakauma(new Negexp(moottoriSettings.getSaapumisJakauma() * 0.25, SEED));

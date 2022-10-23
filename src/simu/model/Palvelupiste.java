@@ -32,7 +32,7 @@ public class Palvelupiste implements Comparable<Palvelupiste> {
 	private int maxMaara;
 	private int palveltavana = 0;
 	
-	/***
+	/**
 	 * Testausta varten
 	 */
 	
@@ -282,7 +282,7 @@ public class Palvelupiste implements Comparable<Palvelupiste> {
 	/**
 	 * Palauttaa skeduloitavan Tapahtuman tyypin
 	 * 
-	 * @return skeduloitavanTapahtumanTyyppi ???
+	 * @return skeduloitavanTapahtumanTyyppi 
 	 */
 	public TapahtumanTyyppi getTapahtumanTyyppi() {
 		return skeduloitavanTapahtumanTyyppi;

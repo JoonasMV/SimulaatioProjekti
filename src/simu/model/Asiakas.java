@@ -74,6 +74,7 @@ public class Asiakas {
 	
 	/**
 	 * Palauttaa Asiakkaan Id:n
+	 * 
 	 * @return id Asiakkaan tunniste
 	 */
 	public int getId() {

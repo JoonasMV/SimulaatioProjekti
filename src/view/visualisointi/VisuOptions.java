@@ -13,21 +13,27 @@ public class VisuOptions {
 	public VisuOptions() {
 	}
 	
-	/***
+	/**
+	 * Asettaa linjastojen määrän
+	 * 
 	 * @param linjastot Linjastojen määrä
 	 */
 	public void setLinjastot(int linjastot) {
 		this.linjastot = linjastot;
 	}
 
-	/***
+	/**
+	 * Asettaa kassojen määrän
+	 * 
 	 * @param kassat Kassojen määrä
 	 */
 	public void setKassat(int kassat) {
 		this.kassat = kassat;
 	}
 	
-	/***
+	/**
+	 * Asettaa Itsepalvelukassojen määrän
+	 * 
 	 * @param ipKassat Itsepalvelukassojen määrä
 	 */
 	public void setIpKassat(int ipKassat) {
@@ -35,6 +41,8 @@ public class VisuOptions {
 	}
 	
 	/**
+	 * Asettaa jonon pituuden
+	 * 
 	 * @param Piirrettävän jonon pituus
 	 */
 	public void setJononpituus(int jono) {
@@ -42,13 +50,17 @@ public class VisuOptions {
 	}
 	
 	/**
+	 * Palauttaa jonon pituuden
+	 * 
 	 * @return Piirrettävän jonon pituus
 	 */
 	public int getJononpituus() {
 		return this.jononpituus;
 	}
 	
-	/***
+	/**
+	 * Palauttaa leipäjonon pituuden
+	 * 
 	 *@return Kertoo leipäjonon kapasiteetin
 	 */
 	public int getLeipaJono() {
@@ -56,13 +68,17 @@ public class VisuOptions {
 	}
 
 	/**
+	 * Asettaa leipäpöydän kapasiteetin
+	 * 
 	 * @param leipaJono leipäpöydän kapasitetti
 	 */
 	public void setLeipaJono(int leipaJono) {
 		this.leipaJono = leipaJono;
 	}
 
-	/***
+	/**
+	 * Palauttaa ruokapöydän kapasiteetin
+	 * 
 	 *@return Kertoo ruokalan kapasiteetin
 	 */
 	public int getRuokaPoydat() {
@@ -70,6 +86,8 @@ public class VisuOptions {
 	}
 
 	/**
+	 * Asettaa ruokapöydän kapasiteetin
+	 * 
 	 * @param ruokaPoydat Ruokalan kapasitetti
 	 */
 	public void setRuokaPoydat(int ruokaPoydat) {
@@ -78,6 +96,7 @@ public class VisuOptions {
 
 	/**
 	 * Asettaa halutut asetukset visualisoijille
+	 * 
 	 * @param masterVisu Lista, joka sisältää jokaisen visualisoijan
 	 */
 	public void setSettings(IVisualisoija[] masterVisu) {

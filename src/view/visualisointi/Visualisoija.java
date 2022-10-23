@@ -12,7 +12,8 @@ public class Visualisoija implements IVisualisoija{
 	int jonottajia;
 	protected Color vari;
 	
-	/***
+	/**
+	 * Visualisoijan konstruktori
 	 * 
 	 * @param n Canvas, johon palvelupisteiden jolle piirretään
 	 */
@@ -21,7 +22,7 @@ public class Visualisoija implements IVisualisoija{
 		this.gc = this.naytto.getGraphicsContext2D();
 	}
 	
-	/***
+	/**
 	 * Piirtää canvakselle palvelupisteen jonon
 	 */
 	@Override
@@ -43,7 +44,7 @@ public class Visualisoija implements IVisualisoija{
 		gc.strokeText(String.format("%s: %d asiakasta", data.getNimi(), data.getJononpituus()), 10, naytto.getHeight() / 2 + 5);
 	}
 	
-	/***
+	/**
 	 * Muuttaa canvaksen kokoa, jos ikkunan kokoa muutetaan
 	 */
 	@Override
@@ -53,7 +54,7 @@ public class Visualisoija implements IVisualisoija{
 		piirra();
 	}
 	
-	/***
+	/**
 	 * Pyyhkii canvaksen, ennen kuin jono piirretään uudelleen
 	 */
 	@Override
@@ -62,7 +63,7 @@ public class Visualisoija implements IVisualisoija{
 		gc.fillRect(0, 0, naytto.getWidth(), naytto.getHeight());
 	}
 
-	/***
+	/**
 	 * @param data Data, jonka perusteella jono piirretään
 	 */
 	@Override
@@ -70,7 +71,9 @@ public class Visualisoija implements IVisualisoija{
 		this.data = data;
 	}
 
-	/***
+	/**
+	 * Palauttaa Canvaksen
+	 * 
 	 * @return palauttaa canvaksen
 	 */
 	@Override
@@ -78,7 +81,9 @@ public class Visualisoija implements IVisualisoija{
 		return this.naytto;
 	}
 	
-	/***
+	/**
+	 * Asettaa Canvaksen
+	 * 
 	 * @param n uusi canvas
 	 */
 	@Override
@@ -88,16 +93,20 @@ public class Visualisoija implements IVisualisoija{
 		piirra();
 	}
 	
-	/***
-	 * @param jonottajia määrittää kuinka pitkä piirrettävä jono on
+	/**
+	 * Asettaa jonon pituuden
+	 * 
+	 * @param jonottajia määrittää, kuinka pitkä piirrettävä jono on
 	 */
 	@Override
 	public void setJononpituus(int jonottajia) {
 		this.jonottajia = jonottajia;
 	}
 	
-	/***
-	 * @param vari Väri jolla jono piirrettään
+	/**
+	 * Asettaa värin
+	 * 
+	 * @param vari Väri, jolla jono piirrettään
 	 */
 	@Override
 	public void setVari(Color vari) {

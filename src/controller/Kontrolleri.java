@@ -80,7 +80,7 @@ public class Kontrolleri implements IKontrolleriMtoC, IKontrolleriVtoC {
 		}
 	}
 	
-	/***
+	/**
 	 * Asettaa palvelupisteille halutut lukumäärät ja jakaumien parametrit
 	 */
 	

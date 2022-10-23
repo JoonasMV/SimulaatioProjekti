@@ -5,7 +5,6 @@ import simu.model.TapahtumanTyyppi;
 
 /**
  * Saapumisprosessia käytetään uusien saapumistapahtumien luomiseen
- * @author 
  *
  */
 public class Saapumisprosessi {

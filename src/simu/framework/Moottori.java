@@ -20,8 +20,9 @@ public abstract class Moottori extends Thread implements IMoottori {
 	
 	protected Palvelupiste[] palvelupisteet;
 	protected IKontrolleriMtoC kontrolleri;
+	
 	/**
-	 * Luo Kellon ja Tapahtumalistan instanssit, saa kontrollerin
+	 * Asettaa kontrollerin
 	 * 
 	 * @param kontrolleri järjestelmän kontrolleri
 	 */
@@ -36,6 +37,7 @@ public abstract class Moottori extends Thread implements IMoottori {
 	public void setSimulointiaika(double aika) {
 		simulointiaika = aika;
 	}
+	
 	/**
 	 * Säie suorittaa A-, B- ja C-Tapahtumat, jos simulointi on käynnissä
 	 * <p>
